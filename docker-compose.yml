@@ -1,0 +1,178 @@
+version: '3'
+
+services:
+
+############################
+# bazel latest gcc-*
+############################
+  bazel-latest-gcc:
+    image: zaucy/bazel:latest-gcc
+    build:
+      context: gcc
+  bazel-latest-gcc-8:
+    image: zaucy/bazel:latest-gcc-8
+    build:
+      context: gcc
+      args:
+        - GCC_VERSION=8
+  bazel-latest-gcc-8-1:
+    image: zaucy/bazel:latest-gcc-8.1
+    build:
+      context: gcc
+      args:
+        - GCC_VERSION=8.1
+  bazel-latest-gcc-8-1-0:
+    image: zaucy/bazel:latest-gcc-8.1.0
+    build:
+      context: gcc
+      args:
+        - GCC_VERSION=8.1.0
+  bazel-latest-gcc-7:
+    image: zaucy/bazel:latest-gcc-7
+    build:
+      context: gcc
+      args:
+        - GCC_VERSION=7
+  bazel-latest-gcc-7-3:
+    image: zaucy/bazel:latest-gcc-7.3
+    build:
+      context: gcc
+      args:
+        - GCC_VERSION=7.3
+  bazel-latest-gcc-7-3-0:
+    image: zaucy/bazel:latest-gcc-7.3.0
+    build:
+      context: gcc
+      args:
+        - GCC_VERSION=7.3.0
+  bazel-latest-gcc-6:
+    image: zaucy/bazel:latest-gcc-6
+    build:
+      context: gcc
+      args:
+        - GCC_VERSION=6
+  bazel-latest-gcc-6-4:
+    image: zaucy/bazel:latest-gcc-6.4
+    build:
+      context: gcc
+      args:
+        - GCC_VERSION=6.4
+  bazel-latest-gcc-6-4-0:
+    image: zaucy/bazel:latest-gcc-6.4.0
+    build:
+      context: gcc
+      args:
+        - GCC_VERSION=6.4.0
+  bazel-latest-gcc-5:
+    image: zaucy/bazel:latest-gcc-5
+    build:
+      context: gcc
+      args:
+        - GCC_VERSION=5
+  bazel-latest-gcc-5-5:
+    image: zaucy/bazel:latest-gcc-5.5
+    build:
+      context: gcc
+      args:
+        - GCC_VERSION=5.5
+  bazel-latest-gcc-5-5-0:
+    image: zaucy/bazel:latest-gcc-5.5.0
+    build:
+      context: gcc
+      args:
+        - GCC_VERSION=5.5.0
+
+############################
+# bazel 0.15.0 gcc-*
+############################
+  bazel-0-15-0-gcc:
+    image: zaucy/bazel:0.15.0-gcc
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.15.0
+        - GCC_VERSION=latest
+  bazel-0-15-0-gcc-8:
+    image: zaucy/bazel:0.15.0-gcc-8
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.15.0
+        - GCC_VERSION=8
+  bazel-0-15-0-gcc-8-1:
+    image: zaucy/bazel:0.15.0-gcc-8.1
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.15.0
+        - GCC_VERSION=8.1
+  bazel-0-15-0-gcc-8-1-0:
+    image: zaucy/bazel:0.15.0-gcc-8.1.0
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.15.0
+        - GCC_VERSION=8.1.0
+  bazel-0-15-0-gcc-7:
+    image: zaucy/bazel:0.15.0-gcc-7
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.15.0
+        - GCC_VERSION=7
+  bazel-0-15-0-gcc-7-3:
+    image: zaucy/bazel:0.15.0-gcc-7.3
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.15.0
+        - GCC_VERSION=7.3
+  bazel-0-15-0-gcc-7-3-0:
+    image: zaucy/bazel:0.15.0-gcc-7.3.0
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.15.0
+        - GCC_VERSION=7.3.0
+  bazel-0-15-0-gcc-6:
+    image: zaucy/bazel:0.15.0-gcc-6
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.15.0
+        - GCC_VERSION=6
+  bazel-0-15-0-gcc-6-4:
+    image: zaucy/bazel:0.15.0-gcc-6.4
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.15.0
+        - GCC_VERSION=6.4
+  bazel-0-15-0-gcc-6-4-0:
+    image: zaucy/bazel:0.15.0-gcc-6.4.0
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.15.0
+        - GCC_VERSION=6.4.0
+  bazel-0-15-0-gcc-5:
+    image: zaucy/bazel:0.15.0-gcc-5
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.15.0
+        - GCC_VERSION=5
+  bazel-0-15-0-gcc-5-5:
+    image: zaucy/bazel:0.15.0-gcc-5.5
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.15.0
+        - GCC_VERSION=5.5
+  bazel-0-15-0-gcc-5-5-0:
+    image: zaucy/bazel:0.15.0-gcc-5.5.0
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.15.0
+        - GCC_VERSION=5.5.0
