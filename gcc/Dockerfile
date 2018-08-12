@@ -4,7 +4,7 @@ FROM gcc:${GCC_VERSION}
 RUN apt-get -y update &&\
   apt-get -y install pkg-config zip g++ zlib1g-dev unzip python
 
-ARG BAZEL_VERSION=0.15.0
+ARG BAZEL_VERSION=0.16.0
 
 RUN curl -L -o bazel-installer.sh https://github.com/bazelbuild/bazel/releases/download/${BAZEL_VERSION}/bazel-${BAZEL_VERSION}-installer-linux-x86_64.sh
 
