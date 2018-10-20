@@ -23,7 +23,7 @@ async function generate() {
 
     for(let {name, versions, default: defaultVersion} of config.compilers) {
       const baseServiceName = ('bazel-' + bazelImgTitle + name).replace(/\./g, '-');
-      const baseTagName = name;
+      const baseTagName = bazelImgTitle + name;
       const imageName = 'zaucy/bazel';
   
       services[baseServiceName] = {
