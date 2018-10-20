@@ -1,0 +1,14 @@
+{
+  "version": "0.0.0",
+  "scripts": {
+    "start": "node generate.js"
+  },
+  "repository": "https://github.com/zaucy/docker-bazel.git",
+  "author": "Ezekiel Warren",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "fs-extra": "^7.0.0",
+    "js-yaml": "^3.12.0"
+  }
+}
