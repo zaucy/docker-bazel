@@ -1,6 +1,7 @@
 bazel:
-  default: 0.18.0
+  default: 0.18.1
   versions: [
+    0.18.1,
     0.18.0,
     0.17.2,
     0.17.1,
