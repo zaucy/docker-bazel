@@ -3,7 +3,7 @@ Source of dockerfiles that create docker image [zaucy/bazel](https://hub.docker.
 
 ## Bazel with GCC
 
-Latest bazel version `0.22.0`
+Latest bazel version `0.23.1`
 Repository: https://github.com/zaucy/docker-bazel
 
 ### Tag format
