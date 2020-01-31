@@ -9,6 +9,6 @@
   "private": true,
   "dependencies": {
     "fs-extra": "^7.0.0",
-    "js-yaml": "^3.12.0"
+    "js-yaml": "^3.13.1"
   }
 }
