@@ -5,224 +5,1862 @@ services:
     build:
       context: gcc
       args:
-        - BAZEL_VERSION=0.23.1
-        - COMPILER_VERSION=8
+        - BAZEL_VERSION=2.0.0
+        - COMPILER_VERSION=9
+  bazel-gcc-9:
+    image: 'zaucy/bazel:gcc-9'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=2.0.0
+        - COMPILER_VERSION=9
+  bazel-gcc-9-2:
+    image: 'zaucy/bazel:gcc-9.2'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=2.0.0
+        - COMPILER_VERSION=9.2
+  bazel-gcc-9-2-0:
+    image: 'zaucy/bazel:gcc-9.2.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=2.0.0
+        - COMPILER_VERSION=9.2.0
   bazel-gcc-8:
     image: 'zaucy/bazel:gcc-8'
     build:
       context: gcc
       args:
-        - BAZEL_VERSION=0.23.1
+        - BAZEL_VERSION=2.0.0
         - COMPILER_VERSION=8
-  bazel-gcc-8-2:
-    image: 'zaucy/bazel:gcc-8.2'
+  bazel-gcc-8-3:
+    image: 'zaucy/bazel:gcc-8.3'
     build:
       context: gcc
       args:
-        - BAZEL_VERSION=0.23.1
-        - COMPILER_VERSION=8.2
-  bazel-gcc-8-2-0:
-    image: 'zaucy/bazel:gcc-8.2.0'
+        - BAZEL_VERSION=2.0.0
+        - COMPILER_VERSION=8.3
+  bazel-gcc-8-3-0:
+    image: 'zaucy/bazel:gcc-8.3.0'
     build:
       context: gcc
       args:
-        - BAZEL_VERSION=0.23.1
-        - COMPILER_VERSION=8.2.0
+        - BAZEL_VERSION=2.0.0
+        - COMPILER_VERSION=8.3.0
   bazel-gcc-7:
     image: 'zaucy/bazel:gcc-7'
     build:
       context: gcc
       args:
-        - BAZEL_VERSION=0.23.1
+        - BAZEL_VERSION=2.0.0
         - COMPILER_VERSION=7
   bazel-gcc-7-3:
     image: 'zaucy/bazel:gcc-7.3'
     build:
       context: gcc
       args:
-        - BAZEL_VERSION=0.23.1
+        - BAZEL_VERSION=2.0.0
         - COMPILER_VERSION=7.3
   bazel-gcc-7-3-0:
     image: 'zaucy/bazel:gcc-7.3.0'
     build:
       context: gcc
       args:
-        - BAZEL_VERSION=0.23.1
+        - BAZEL_VERSION=2.0.0
         - COMPILER_VERSION=7.3.0
   bazel-gcc-6:
     image: 'zaucy/bazel:gcc-6'
     build:
       context: gcc
       args:
-        - BAZEL_VERSION=0.23.1
+        - BAZEL_VERSION=2.0.0
         - COMPILER_VERSION=6
   bazel-gcc-6-4:
     image: 'zaucy/bazel:gcc-6.4'
     build:
       context: gcc
       args:
-        - BAZEL_VERSION=0.23.1
+        - BAZEL_VERSION=2.0.0
         - COMPILER_VERSION=6.4
   bazel-gcc-6-4-0:
     image: 'zaucy/bazel:gcc-6.4.0'
     build:
       context: gcc
       args:
-        - BAZEL_VERSION=0.23.1
+        - BAZEL_VERSION=2.0.0
         - COMPILER_VERSION=6.4.0
   bazel-gcc-5:
     image: 'zaucy/bazel:gcc-5'
     build:
       context: gcc
       args:
-        - BAZEL_VERSION=0.23.1
+        - BAZEL_VERSION=2.0.0
         - COMPILER_VERSION=5
   bazel-gcc-5-5:
     image: 'zaucy/bazel:gcc-5.5'
     build:
       context: gcc
       args:
-        - BAZEL_VERSION=0.23.1
+        - BAZEL_VERSION=2.0.0
         - COMPILER_VERSION=5.5
   bazel-gcc-5-5-0:
     image: 'zaucy/bazel:gcc-5.5.0'
     build:
       context: gcc
       args:
-        - BAZEL_VERSION=0.23.1
+        - BAZEL_VERSION=2.0.0
         - COMPILER_VERSION=5.5.0
   bazel-gcc-4:
     image: 'zaucy/bazel:gcc-4'
     build:
       context: gcc
       args:
-        - BAZEL_VERSION=0.23.1
+        - BAZEL_VERSION=2.0.0
         - COMPILER_VERSION=4
   bazel-gcc-4-9:
     image: 'zaucy/bazel:gcc-4.9'
     build:
       context: gcc
       args:
-        - BAZEL_VERSION=0.23.1
+        - BAZEL_VERSION=2.0.0
         - COMPILER_VERSION=4.9
   bazel-gcc-4-9-4:
     image: 'zaucy/bazel:gcc-4.9.4'
     build:
       context: gcc
       args:
-        - BAZEL_VERSION=0.23.1
+        - BAZEL_VERSION=2.0.0
         - COMPILER_VERSION=4.9.4
-  bazel-0-23-1-gcc:
-    image: 'zaucy/bazel:0.23.1-gcc'
+  bazel-2-0-0-gcc:
+    image: 'zaucy/bazel:2.0.0-gcc'
     build:
       context: gcc
       args:
-        - BAZEL_VERSION=0.23.1
+        - BAZEL_VERSION=2.0.0
+        - COMPILER_VERSION=9
+  bazel-2-0-0-gcc-9:
+    image: 'zaucy/bazel:2.0.0-gcc-9'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=2.0.0
+        - COMPILER_VERSION=9
+  bazel-2-0-0-gcc-9-2:
+    image: 'zaucy/bazel:2.0.0-gcc-9.2'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=2.0.0
+        - COMPILER_VERSION=9.2
+  bazel-2-0-0-gcc-9-2-0:
+    image: 'zaucy/bazel:2.0.0-gcc-9.2.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=2.0.0
+        - COMPILER_VERSION=9.2.0
+  bazel-2-0-0-gcc-8:
+    image: 'zaucy/bazel:2.0.0-gcc-8'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=2.0.0
         - COMPILER_VERSION=8
-  bazel-0-23-1-gcc-8:
-    image: 'zaucy/bazel:0.23.1-gcc-8'
+  bazel-2-0-0-gcc-8-3:
+    image: 'zaucy/bazel:2.0.0-gcc-8.3'
     build:
       context: gcc
       args:
-        - BAZEL_VERSION=0.23.1
-        - COMPILER_VERSION=8
-  bazel-0-23-1-gcc-8-2:
-    image: 'zaucy/bazel:0.23.1-gcc-8.2'
+        - BAZEL_VERSION=2.0.0
+        - COMPILER_VERSION=8.3
+  bazel-2-0-0-gcc-8-3-0:
+    image: 'zaucy/bazel:2.0.0-gcc-8.3.0'
     build:
       context: gcc
       args:
-        - BAZEL_VERSION=0.23.1
-        - COMPILER_VERSION=8.2
-  bazel-0-23-1-gcc-8-2-0:
-    image: 'zaucy/bazel:0.23.1-gcc-8.2.0'
+        - BAZEL_VERSION=2.0.0
+        - COMPILER_VERSION=8.3.0
+  bazel-2-0-0-gcc-7:
+    image: 'zaucy/bazel:2.0.0-gcc-7'
     build:
       context: gcc
       args:
-        - BAZEL_VERSION=0.23.1
-        - COMPILER_VERSION=8.2.0
-  bazel-0-23-1-gcc-7:
-    image: 'zaucy/bazel:0.23.1-gcc-7'
-    build:
-      context: gcc
-      args:
-        - BAZEL_VERSION=0.23.1
+        - BAZEL_VERSION=2.0.0
         - COMPILER_VERSION=7
-  bazel-0-23-1-gcc-7-3:
-    image: 'zaucy/bazel:0.23.1-gcc-7.3'
+  bazel-2-0-0-gcc-7-3:
+    image: 'zaucy/bazel:2.0.0-gcc-7.3'
     build:
       context: gcc
       args:
-        - BAZEL_VERSION=0.23.1
+        - BAZEL_VERSION=2.0.0
         - COMPILER_VERSION=7.3
-  bazel-0-23-1-gcc-7-3-0:
-    image: 'zaucy/bazel:0.23.1-gcc-7.3.0'
+  bazel-2-0-0-gcc-7-3-0:
+    image: 'zaucy/bazel:2.0.0-gcc-7.3.0'
     build:
       context: gcc
       args:
-        - BAZEL_VERSION=0.23.1
+        - BAZEL_VERSION=2.0.0
         - COMPILER_VERSION=7.3.0
-  bazel-0-23-1-gcc-6:
-    image: 'zaucy/bazel:0.23.1-gcc-6'
+  bazel-2-0-0-gcc-6:
+    image: 'zaucy/bazel:2.0.0-gcc-6'
     build:
       context: gcc
       args:
-        - BAZEL_VERSION=0.23.1
+        - BAZEL_VERSION=2.0.0
         - COMPILER_VERSION=6
-  bazel-0-23-1-gcc-6-4:
-    image: 'zaucy/bazel:0.23.1-gcc-6.4'
+  bazel-2-0-0-gcc-6-4:
+    image: 'zaucy/bazel:2.0.0-gcc-6.4'
     build:
       context: gcc
       args:
-        - BAZEL_VERSION=0.23.1
+        - BAZEL_VERSION=2.0.0
         - COMPILER_VERSION=6.4
-  bazel-0-23-1-gcc-6-4-0:
-    image: 'zaucy/bazel:0.23.1-gcc-6.4.0'
+  bazel-2-0-0-gcc-6-4-0:
+    image: 'zaucy/bazel:2.0.0-gcc-6.4.0'
     build:
       context: gcc
       args:
-        - BAZEL_VERSION=0.23.1
+        - BAZEL_VERSION=2.0.0
         - COMPILER_VERSION=6.4.0
-  bazel-0-23-1-gcc-5:
-    image: 'zaucy/bazel:0.23.1-gcc-5'
+  bazel-2-0-0-gcc-5:
+    image: 'zaucy/bazel:2.0.0-gcc-5'
     build:
       context: gcc
       args:
-        - BAZEL_VERSION=0.23.1
+        - BAZEL_VERSION=2.0.0
         - COMPILER_VERSION=5
-  bazel-0-23-1-gcc-5-5:
-    image: 'zaucy/bazel:0.23.1-gcc-5.5'
+  bazel-2-0-0-gcc-5-5:
+    image: 'zaucy/bazel:2.0.0-gcc-5.5'
     build:
       context: gcc
       args:
-        - BAZEL_VERSION=0.23.1
+        - BAZEL_VERSION=2.0.0
         - COMPILER_VERSION=5.5
-  bazel-0-23-1-gcc-5-5-0:
-    image: 'zaucy/bazel:0.23.1-gcc-5.5.0'
+  bazel-2-0-0-gcc-5-5-0:
+    image: 'zaucy/bazel:2.0.0-gcc-5.5.0'
     build:
       context: gcc
       args:
-        - BAZEL_VERSION=0.23.1
+        - BAZEL_VERSION=2.0.0
         - COMPILER_VERSION=5.5.0
-  bazel-0-23-1-gcc-4:
-    image: 'zaucy/bazel:0.23.1-gcc-4'
+  bazel-2-0-0-gcc-4:
+    image: 'zaucy/bazel:2.0.0-gcc-4'
     build:
       context: gcc
       args:
-        - BAZEL_VERSION=0.23.1
+        - BAZEL_VERSION=2.0.0
         - COMPILER_VERSION=4
-  bazel-0-23-1-gcc-4-9:
-    image: 'zaucy/bazel:0.23.1-gcc-4.9'
+  bazel-2-0-0-gcc-4-9:
+    image: 'zaucy/bazel:2.0.0-gcc-4.9'
     build:
       context: gcc
       args:
-        - BAZEL_VERSION=0.23.1
+        - BAZEL_VERSION=2.0.0
         - COMPILER_VERSION=4.9
-  bazel-0-23-1-gcc-4-9-4:
-    image: 'zaucy/bazel:0.23.1-gcc-4.9.4'
+  bazel-2-0-0-gcc-4-9-4:
+    image: 'zaucy/bazel:2.0.0-gcc-4.9.4'
     build:
       context: gcc
       args:
-        - BAZEL_VERSION=0.23.1
+        - BAZEL_VERSION=2.0.0
+        - COMPILER_VERSION=4.9.4
+  bazel-1-2-1-gcc:
+    image: 'zaucy/bazel:1.2.1-gcc'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.2.1
+        - COMPILER_VERSION=9
+  bazel-1-2-1-gcc-9:
+    image: 'zaucy/bazel:1.2.1-gcc-9'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.2.1
+        - COMPILER_VERSION=9
+  bazel-1-2-1-gcc-9-2:
+    image: 'zaucy/bazel:1.2.1-gcc-9.2'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.2.1
+        - COMPILER_VERSION=9.2
+  bazel-1-2-1-gcc-9-2-0:
+    image: 'zaucy/bazel:1.2.1-gcc-9.2.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.2.1
+        - COMPILER_VERSION=9.2.0
+  bazel-1-2-1-gcc-8:
+    image: 'zaucy/bazel:1.2.1-gcc-8'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.2.1
+        - COMPILER_VERSION=8
+  bazel-1-2-1-gcc-8-3:
+    image: 'zaucy/bazel:1.2.1-gcc-8.3'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.2.1
+        - COMPILER_VERSION=8.3
+  bazel-1-2-1-gcc-8-3-0:
+    image: 'zaucy/bazel:1.2.1-gcc-8.3.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.2.1
+        - COMPILER_VERSION=8.3.0
+  bazel-1-2-1-gcc-7:
+    image: 'zaucy/bazel:1.2.1-gcc-7'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.2.1
+        - COMPILER_VERSION=7
+  bazel-1-2-1-gcc-7-3:
+    image: 'zaucy/bazel:1.2.1-gcc-7.3'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.2.1
+        - COMPILER_VERSION=7.3
+  bazel-1-2-1-gcc-7-3-0:
+    image: 'zaucy/bazel:1.2.1-gcc-7.3.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.2.1
+        - COMPILER_VERSION=7.3.0
+  bazel-1-2-1-gcc-6:
+    image: 'zaucy/bazel:1.2.1-gcc-6'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.2.1
+        - COMPILER_VERSION=6
+  bazel-1-2-1-gcc-6-4:
+    image: 'zaucy/bazel:1.2.1-gcc-6.4'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.2.1
+        - COMPILER_VERSION=6.4
+  bazel-1-2-1-gcc-6-4-0:
+    image: 'zaucy/bazel:1.2.1-gcc-6.4.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.2.1
+        - COMPILER_VERSION=6.4.0
+  bazel-1-2-1-gcc-5:
+    image: 'zaucy/bazel:1.2.1-gcc-5'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.2.1
+        - COMPILER_VERSION=5
+  bazel-1-2-1-gcc-5-5:
+    image: 'zaucy/bazel:1.2.1-gcc-5.5'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.2.1
+        - COMPILER_VERSION=5.5
+  bazel-1-2-1-gcc-5-5-0:
+    image: 'zaucy/bazel:1.2.1-gcc-5.5.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.2.1
+        - COMPILER_VERSION=5.5.0
+  bazel-1-2-1-gcc-4:
+    image: 'zaucy/bazel:1.2.1-gcc-4'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.2.1
+        - COMPILER_VERSION=4
+  bazel-1-2-1-gcc-4-9:
+    image: 'zaucy/bazel:1.2.1-gcc-4.9'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.2.1
+        - COMPILER_VERSION=4.9
+  bazel-1-2-1-gcc-4-9-4:
+    image: 'zaucy/bazel:1.2.1-gcc-4.9.4'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.2.1
+        - COMPILER_VERSION=4.9.4
+  bazel-1-2-0-gcc:
+    image: 'zaucy/bazel:1.2.0-gcc'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.2.0
+        - COMPILER_VERSION=9
+  bazel-1-2-0-gcc-9:
+    image: 'zaucy/bazel:1.2.0-gcc-9'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.2.0
+        - COMPILER_VERSION=9
+  bazel-1-2-0-gcc-9-2:
+    image: 'zaucy/bazel:1.2.0-gcc-9.2'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.2.0
+        - COMPILER_VERSION=9.2
+  bazel-1-2-0-gcc-9-2-0:
+    image: 'zaucy/bazel:1.2.0-gcc-9.2.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.2.0
+        - COMPILER_VERSION=9.2.0
+  bazel-1-2-0-gcc-8:
+    image: 'zaucy/bazel:1.2.0-gcc-8'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.2.0
+        - COMPILER_VERSION=8
+  bazel-1-2-0-gcc-8-3:
+    image: 'zaucy/bazel:1.2.0-gcc-8.3'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.2.0
+        - COMPILER_VERSION=8.3
+  bazel-1-2-0-gcc-8-3-0:
+    image: 'zaucy/bazel:1.2.0-gcc-8.3.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.2.0
+        - COMPILER_VERSION=8.3.0
+  bazel-1-2-0-gcc-7:
+    image: 'zaucy/bazel:1.2.0-gcc-7'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.2.0
+        - COMPILER_VERSION=7
+  bazel-1-2-0-gcc-7-3:
+    image: 'zaucy/bazel:1.2.0-gcc-7.3'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.2.0
+        - COMPILER_VERSION=7.3
+  bazel-1-2-0-gcc-7-3-0:
+    image: 'zaucy/bazel:1.2.0-gcc-7.3.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.2.0
+        - COMPILER_VERSION=7.3.0
+  bazel-1-2-0-gcc-6:
+    image: 'zaucy/bazel:1.2.0-gcc-6'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.2.0
+        - COMPILER_VERSION=6
+  bazel-1-2-0-gcc-6-4:
+    image: 'zaucy/bazel:1.2.0-gcc-6.4'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.2.0
+        - COMPILER_VERSION=6.4
+  bazel-1-2-0-gcc-6-4-0:
+    image: 'zaucy/bazel:1.2.0-gcc-6.4.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.2.0
+        - COMPILER_VERSION=6.4.0
+  bazel-1-2-0-gcc-5:
+    image: 'zaucy/bazel:1.2.0-gcc-5'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.2.0
+        - COMPILER_VERSION=5
+  bazel-1-2-0-gcc-5-5:
+    image: 'zaucy/bazel:1.2.0-gcc-5.5'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.2.0
+        - COMPILER_VERSION=5.5
+  bazel-1-2-0-gcc-5-5-0:
+    image: 'zaucy/bazel:1.2.0-gcc-5.5.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.2.0
+        - COMPILER_VERSION=5.5.0
+  bazel-1-2-0-gcc-4:
+    image: 'zaucy/bazel:1.2.0-gcc-4'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.2.0
+        - COMPILER_VERSION=4
+  bazel-1-2-0-gcc-4-9:
+    image: 'zaucy/bazel:1.2.0-gcc-4.9'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.2.0
+        - COMPILER_VERSION=4.9
+  bazel-1-2-0-gcc-4-9-4:
+    image: 'zaucy/bazel:1.2.0-gcc-4.9.4'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.2.0
+        - COMPILER_VERSION=4.9.4
+  bazel-1-1-0-gcc:
+    image: 'zaucy/bazel:1.1.0-gcc'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.1.0
+        - COMPILER_VERSION=9
+  bazel-1-1-0-gcc-9:
+    image: 'zaucy/bazel:1.1.0-gcc-9'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.1.0
+        - COMPILER_VERSION=9
+  bazel-1-1-0-gcc-9-2:
+    image: 'zaucy/bazel:1.1.0-gcc-9.2'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.1.0
+        - COMPILER_VERSION=9.2
+  bazel-1-1-0-gcc-9-2-0:
+    image: 'zaucy/bazel:1.1.0-gcc-9.2.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.1.0
+        - COMPILER_VERSION=9.2.0
+  bazel-1-1-0-gcc-8:
+    image: 'zaucy/bazel:1.1.0-gcc-8'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.1.0
+        - COMPILER_VERSION=8
+  bazel-1-1-0-gcc-8-3:
+    image: 'zaucy/bazel:1.1.0-gcc-8.3'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.1.0
+        - COMPILER_VERSION=8.3
+  bazel-1-1-0-gcc-8-3-0:
+    image: 'zaucy/bazel:1.1.0-gcc-8.3.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.1.0
+        - COMPILER_VERSION=8.3.0
+  bazel-1-1-0-gcc-7:
+    image: 'zaucy/bazel:1.1.0-gcc-7'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.1.0
+        - COMPILER_VERSION=7
+  bazel-1-1-0-gcc-7-3:
+    image: 'zaucy/bazel:1.1.0-gcc-7.3'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.1.0
+        - COMPILER_VERSION=7.3
+  bazel-1-1-0-gcc-7-3-0:
+    image: 'zaucy/bazel:1.1.0-gcc-7.3.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.1.0
+        - COMPILER_VERSION=7.3.0
+  bazel-1-1-0-gcc-6:
+    image: 'zaucy/bazel:1.1.0-gcc-6'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.1.0
+        - COMPILER_VERSION=6
+  bazel-1-1-0-gcc-6-4:
+    image: 'zaucy/bazel:1.1.0-gcc-6.4'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.1.0
+        - COMPILER_VERSION=6.4
+  bazel-1-1-0-gcc-6-4-0:
+    image: 'zaucy/bazel:1.1.0-gcc-6.4.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.1.0
+        - COMPILER_VERSION=6.4.0
+  bazel-1-1-0-gcc-5:
+    image: 'zaucy/bazel:1.1.0-gcc-5'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.1.0
+        - COMPILER_VERSION=5
+  bazel-1-1-0-gcc-5-5:
+    image: 'zaucy/bazel:1.1.0-gcc-5.5'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.1.0
+        - COMPILER_VERSION=5.5
+  bazel-1-1-0-gcc-5-5-0:
+    image: 'zaucy/bazel:1.1.0-gcc-5.5.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.1.0
+        - COMPILER_VERSION=5.5.0
+  bazel-1-1-0-gcc-4:
+    image: 'zaucy/bazel:1.1.0-gcc-4'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.1.0
+        - COMPILER_VERSION=4
+  bazel-1-1-0-gcc-4-9:
+    image: 'zaucy/bazel:1.1.0-gcc-4.9'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.1.0
+        - COMPILER_VERSION=4.9
+  bazel-1-1-0-gcc-4-9-4:
+    image: 'zaucy/bazel:1.1.0-gcc-4.9.4'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.1.0
+        - COMPILER_VERSION=4.9.4
+  bazel-1-0-1-gcc:
+    image: 'zaucy/bazel:1.0.1-gcc'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.0.1
+        - COMPILER_VERSION=9
+  bazel-1-0-1-gcc-9:
+    image: 'zaucy/bazel:1.0.1-gcc-9'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.0.1
+        - COMPILER_VERSION=9
+  bazel-1-0-1-gcc-9-2:
+    image: 'zaucy/bazel:1.0.1-gcc-9.2'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.0.1
+        - COMPILER_VERSION=9.2
+  bazel-1-0-1-gcc-9-2-0:
+    image: 'zaucy/bazel:1.0.1-gcc-9.2.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.0.1
+        - COMPILER_VERSION=9.2.0
+  bazel-1-0-1-gcc-8:
+    image: 'zaucy/bazel:1.0.1-gcc-8'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.0.1
+        - COMPILER_VERSION=8
+  bazel-1-0-1-gcc-8-3:
+    image: 'zaucy/bazel:1.0.1-gcc-8.3'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.0.1
+        - COMPILER_VERSION=8.3
+  bazel-1-0-1-gcc-8-3-0:
+    image: 'zaucy/bazel:1.0.1-gcc-8.3.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.0.1
+        - COMPILER_VERSION=8.3.0
+  bazel-1-0-1-gcc-7:
+    image: 'zaucy/bazel:1.0.1-gcc-7'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.0.1
+        - COMPILER_VERSION=7
+  bazel-1-0-1-gcc-7-3:
+    image: 'zaucy/bazel:1.0.1-gcc-7.3'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.0.1
+        - COMPILER_VERSION=7.3
+  bazel-1-0-1-gcc-7-3-0:
+    image: 'zaucy/bazel:1.0.1-gcc-7.3.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.0.1
+        - COMPILER_VERSION=7.3.0
+  bazel-1-0-1-gcc-6:
+    image: 'zaucy/bazel:1.0.1-gcc-6'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.0.1
+        - COMPILER_VERSION=6
+  bazel-1-0-1-gcc-6-4:
+    image: 'zaucy/bazel:1.0.1-gcc-6.4'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.0.1
+        - COMPILER_VERSION=6.4
+  bazel-1-0-1-gcc-6-4-0:
+    image: 'zaucy/bazel:1.0.1-gcc-6.4.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.0.1
+        - COMPILER_VERSION=6.4.0
+  bazel-1-0-1-gcc-5:
+    image: 'zaucy/bazel:1.0.1-gcc-5'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.0.1
+        - COMPILER_VERSION=5
+  bazel-1-0-1-gcc-5-5:
+    image: 'zaucy/bazel:1.0.1-gcc-5.5'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.0.1
+        - COMPILER_VERSION=5.5
+  bazel-1-0-1-gcc-5-5-0:
+    image: 'zaucy/bazel:1.0.1-gcc-5.5.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.0.1
+        - COMPILER_VERSION=5.5.0
+  bazel-1-0-1-gcc-4:
+    image: 'zaucy/bazel:1.0.1-gcc-4'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.0.1
+        - COMPILER_VERSION=4
+  bazel-1-0-1-gcc-4-9:
+    image: 'zaucy/bazel:1.0.1-gcc-4.9'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.0.1
+        - COMPILER_VERSION=4.9
+  bazel-1-0-1-gcc-4-9-4:
+    image: 'zaucy/bazel:1.0.1-gcc-4.9.4'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.0.1
+        - COMPILER_VERSION=4.9.4
+  bazel-1-0-0-gcc:
+    image: 'zaucy/bazel:1.0.0-gcc'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.0.0
+        - COMPILER_VERSION=9
+  bazel-1-0-0-gcc-9:
+    image: 'zaucy/bazel:1.0.0-gcc-9'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.0.0
+        - COMPILER_VERSION=9
+  bazel-1-0-0-gcc-9-2:
+    image: 'zaucy/bazel:1.0.0-gcc-9.2'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.0.0
+        - COMPILER_VERSION=9.2
+  bazel-1-0-0-gcc-9-2-0:
+    image: 'zaucy/bazel:1.0.0-gcc-9.2.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.0.0
+        - COMPILER_VERSION=9.2.0
+  bazel-1-0-0-gcc-8:
+    image: 'zaucy/bazel:1.0.0-gcc-8'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.0.0
+        - COMPILER_VERSION=8
+  bazel-1-0-0-gcc-8-3:
+    image: 'zaucy/bazel:1.0.0-gcc-8.3'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.0.0
+        - COMPILER_VERSION=8.3
+  bazel-1-0-0-gcc-8-3-0:
+    image: 'zaucy/bazel:1.0.0-gcc-8.3.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.0.0
+        - COMPILER_VERSION=8.3.0
+  bazel-1-0-0-gcc-7:
+    image: 'zaucy/bazel:1.0.0-gcc-7'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.0.0
+        - COMPILER_VERSION=7
+  bazel-1-0-0-gcc-7-3:
+    image: 'zaucy/bazel:1.0.0-gcc-7.3'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.0.0
+        - COMPILER_VERSION=7.3
+  bazel-1-0-0-gcc-7-3-0:
+    image: 'zaucy/bazel:1.0.0-gcc-7.3.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.0.0
+        - COMPILER_VERSION=7.3.0
+  bazel-1-0-0-gcc-6:
+    image: 'zaucy/bazel:1.0.0-gcc-6'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.0.0
+        - COMPILER_VERSION=6
+  bazel-1-0-0-gcc-6-4:
+    image: 'zaucy/bazel:1.0.0-gcc-6.4'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.0.0
+        - COMPILER_VERSION=6.4
+  bazel-1-0-0-gcc-6-4-0:
+    image: 'zaucy/bazel:1.0.0-gcc-6.4.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.0.0
+        - COMPILER_VERSION=6.4.0
+  bazel-1-0-0-gcc-5:
+    image: 'zaucy/bazel:1.0.0-gcc-5'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.0.0
+        - COMPILER_VERSION=5
+  bazel-1-0-0-gcc-5-5:
+    image: 'zaucy/bazel:1.0.0-gcc-5.5'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.0.0
+        - COMPILER_VERSION=5.5
+  bazel-1-0-0-gcc-5-5-0:
+    image: 'zaucy/bazel:1.0.0-gcc-5.5.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.0.0
+        - COMPILER_VERSION=5.5.0
+  bazel-1-0-0-gcc-4:
+    image: 'zaucy/bazel:1.0.0-gcc-4'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.0.0
+        - COMPILER_VERSION=4
+  bazel-1-0-0-gcc-4-9:
+    image: 'zaucy/bazel:1.0.0-gcc-4.9'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.0.0
+        - COMPILER_VERSION=4.9
+  bazel-1-0-0-gcc-4-9-4:
+    image: 'zaucy/bazel:1.0.0-gcc-4.9.4'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=1.0.0
+        - COMPILER_VERSION=4.9.4
+  bazel-0-29-1-gcc:
+    image: 'zaucy/bazel:0.29.1-gcc'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.29.1
+        - COMPILER_VERSION=9
+  bazel-0-29-1-gcc-9:
+    image: 'zaucy/bazel:0.29.1-gcc-9'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.29.1
+        - COMPILER_VERSION=9
+  bazel-0-29-1-gcc-9-2:
+    image: 'zaucy/bazel:0.29.1-gcc-9.2'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.29.1
+        - COMPILER_VERSION=9.2
+  bazel-0-29-1-gcc-9-2-0:
+    image: 'zaucy/bazel:0.29.1-gcc-9.2.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.29.1
+        - COMPILER_VERSION=9.2.0
+  bazel-0-29-1-gcc-8:
+    image: 'zaucy/bazel:0.29.1-gcc-8'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.29.1
+        - COMPILER_VERSION=8
+  bazel-0-29-1-gcc-8-3:
+    image: 'zaucy/bazel:0.29.1-gcc-8.3'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.29.1
+        - COMPILER_VERSION=8.3
+  bazel-0-29-1-gcc-8-3-0:
+    image: 'zaucy/bazel:0.29.1-gcc-8.3.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.29.1
+        - COMPILER_VERSION=8.3.0
+  bazel-0-29-1-gcc-7:
+    image: 'zaucy/bazel:0.29.1-gcc-7'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.29.1
+        - COMPILER_VERSION=7
+  bazel-0-29-1-gcc-7-3:
+    image: 'zaucy/bazel:0.29.1-gcc-7.3'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.29.1
+        - COMPILER_VERSION=7.3
+  bazel-0-29-1-gcc-7-3-0:
+    image: 'zaucy/bazel:0.29.1-gcc-7.3.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.29.1
+        - COMPILER_VERSION=7.3.0
+  bazel-0-29-1-gcc-6:
+    image: 'zaucy/bazel:0.29.1-gcc-6'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.29.1
+        - COMPILER_VERSION=6
+  bazel-0-29-1-gcc-6-4:
+    image: 'zaucy/bazel:0.29.1-gcc-6.4'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.29.1
+        - COMPILER_VERSION=6.4
+  bazel-0-29-1-gcc-6-4-0:
+    image: 'zaucy/bazel:0.29.1-gcc-6.4.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.29.1
+        - COMPILER_VERSION=6.4.0
+  bazel-0-29-1-gcc-5:
+    image: 'zaucy/bazel:0.29.1-gcc-5'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.29.1
+        - COMPILER_VERSION=5
+  bazel-0-29-1-gcc-5-5:
+    image: 'zaucy/bazel:0.29.1-gcc-5.5'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.29.1
+        - COMPILER_VERSION=5.5
+  bazel-0-29-1-gcc-5-5-0:
+    image: 'zaucy/bazel:0.29.1-gcc-5.5.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.29.1
+        - COMPILER_VERSION=5.5.0
+  bazel-0-29-1-gcc-4:
+    image: 'zaucy/bazel:0.29.1-gcc-4'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.29.1
+        - COMPILER_VERSION=4
+  bazel-0-29-1-gcc-4-9:
+    image: 'zaucy/bazel:0.29.1-gcc-4.9'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.29.1
+        - COMPILER_VERSION=4.9
+  bazel-0-29-1-gcc-4-9-4:
+    image: 'zaucy/bazel:0.29.1-gcc-4.9.4'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.29.1
+        - COMPILER_VERSION=4.9.4
+  bazel-0-28-1-gcc:
+    image: 'zaucy/bazel:0.28.1-gcc'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.28.1
+        - COMPILER_VERSION=9
+  bazel-0-28-1-gcc-9:
+    image: 'zaucy/bazel:0.28.1-gcc-9'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.28.1
+        - COMPILER_VERSION=9
+  bazel-0-28-1-gcc-9-2:
+    image: 'zaucy/bazel:0.28.1-gcc-9.2'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.28.1
+        - COMPILER_VERSION=9.2
+  bazel-0-28-1-gcc-9-2-0:
+    image: 'zaucy/bazel:0.28.1-gcc-9.2.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.28.1
+        - COMPILER_VERSION=9.2.0
+  bazel-0-28-1-gcc-8:
+    image: 'zaucy/bazel:0.28.1-gcc-8'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.28.1
+        - COMPILER_VERSION=8
+  bazel-0-28-1-gcc-8-3:
+    image: 'zaucy/bazel:0.28.1-gcc-8.3'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.28.1
+        - COMPILER_VERSION=8.3
+  bazel-0-28-1-gcc-8-3-0:
+    image: 'zaucy/bazel:0.28.1-gcc-8.3.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.28.1
+        - COMPILER_VERSION=8.3.0
+  bazel-0-28-1-gcc-7:
+    image: 'zaucy/bazel:0.28.1-gcc-7'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.28.1
+        - COMPILER_VERSION=7
+  bazel-0-28-1-gcc-7-3:
+    image: 'zaucy/bazel:0.28.1-gcc-7.3'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.28.1
+        - COMPILER_VERSION=7.3
+  bazel-0-28-1-gcc-7-3-0:
+    image: 'zaucy/bazel:0.28.1-gcc-7.3.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.28.1
+        - COMPILER_VERSION=7.3.0
+  bazel-0-28-1-gcc-6:
+    image: 'zaucy/bazel:0.28.1-gcc-6'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.28.1
+        - COMPILER_VERSION=6
+  bazel-0-28-1-gcc-6-4:
+    image: 'zaucy/bazel:0.28.1-gcc-6.4'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.28.1
+        - COMPILER_VERSION=6.4
+  bazel-0-28-1-gcc-6-4-0:
+    image: 'zaucy/bazel:0.28.1-gcc-6.4.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.28.1
+        - COMPILER_VERSION=6.4.0
+  bazel-0-28-1-gcc-5:
+    image: 'zaucy/bazel:0.28.1-gcc-5'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.28.1
+        - COMPILER_VERSION=5
+  bazel-0-28-1-gcc-5-5:
+    image: 'zaucy/bazel:0.28.1-gcc-5.5'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.28.1
+        - COMPILER_VERSION=5.5
+  bazel-0-28-1-gcc-5-5-0:
+    image: 'zaucy/bazel:0.28.1-gcc-5.5.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.28.1
+        - COMPILER_VERSION=5.5.0
+  bazel-0-28-1-gcc-4:
+    image: 'zaucy/bazel:0.28.1-gcc-4'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.28.1
+        - COMPILER_VERSION=4
+  bazel-0-28-1-gcc-4-9:
+    image: 'zaucy/bazel:0.28.1-gcc-4.9'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.28.1
+        - COMPILER_VERSION=4.9
+  bazel-0-28-1-gcc-4-9-4:
+    image: 'zaucy/bazel:0.28.1-gcc-4.9.4'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.28.1
+        - COMPILER_VERSION=4.9.4
+  bazel-0-27-2-gcc:
+    image: 'zaucy/bazel:0.27.2-gcc'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.27.2
+        - COMPILER_VERSION=9
+  bazel-0-27-2-gcc-9:
+    image: 'zaucy/bazel:0.27.2-gcc-9'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.27.2
+        - COMPILER_VERSION=9
+  bazel-0-27-2-gcc-9-2:
+    image: 'zaucy/bazel:0.27.2-gcc-9.2'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.27.2
+        - COMPILER_VERSION=9.2
+  bazel-0-27-2-gcc-9-2-0:
+    image: 'zaucy/bazel:0.27.2-gcc-9.2.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.27.2
+        - COMPILER_VERSION=9.2.0
+  bazel-0-27-2-gcc-8:
+    image: 'zaucy/bazel:0.27.2-gcc-8'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.27.2
+        - COMPILER_VERSION=8
+  bazel-0-27-2-gcc-8-3:
+    image: 'zaucy/bazel:0.27.2-gcc-8.3'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.27.2
+        - COMPILER_VERSION=8.3
+  bazel-0-27-2-gcc-8-3-0:
+    image: 'zaucy/bazel:0.27.2-gcc-8.3.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.27.2
+        - COMPILER_VERSION=8.3.0
+  bazel-0-27-2-gcc-7:
+    image: 'zaucy/bazel:0.27.2-gcc-7'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.27.2
+        - COMPILER_VERSION=7
+  bazel-0-27-2-gcc-7-3:
+    image: 'zaucy/bazel:0.27.2-gcc-7.3'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.27.2
+        - COMPILER_VERSION=7.3
+  bazel-0-27-2-gcc-7-3-0:
+    image: 'zaucy/bazel:0.27.2-gcc-7.3.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.27.2
+        - COMPILER_VERSION=7.3.0
+  bazel-0-27-2-gcc-6:
+    image: 'zaucy/bazel:0.27.2-gcc-6'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.27.2
+        - COMPILER_VERSION=6
+  bazel-0-27-2-gcc-6-4:
+    image: 'zaucy/bazel:0.27.2-gcc-6.4'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.27.2
+        - COMPILER_VERSION=6.4
+  bazel-0-27-2-gcc-6-4-0:
+    image: 'zaucy/bazel:0.27.2-gcc-6.4.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.27.2
+        - COMPILER_VERSION=6.4.0
+  bazel-0-27-2-gcc-5:
+    image: 'zaucy/bazel:0.27.2-gcc-5'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.27.2
+        - COMPILER_VERSION=5
+  bazel-0-27-2-gcc-5-5:
+    image: 'zaucy/bazel:0.27.2-gcc-5.5'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.27.2
+        - COMPILER_VERSION=5.5
+  bazel-0-27-2-gcc-5-5-0:
+    image: 'zaucy/bazel:0.27.2-gcc-5.5.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.27.2
+        - COMPILER_VERSION=5.5.0
+  bazel-0-27-2-gcc-4:
+    image: 'zaucy/bazel:0.27.2-gcc-4'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.27.2
+        - COMPILER_VERSION=4
+  bazel-0-27-2-gcc-4-9:
+    image: 'zaucy/bazel:0.27.2-gcc-4.9'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.27.2
+        - COMPILER_VERSION=4.9
+  bazel-0-27-2-gcc-4-9-4:
+    image: 'zaucy/bazel:0.27.2-gcc-4.9.4'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.27.2
+        - COMPILER_VERSION=4.9.4
+  bazel-0-26-1-gcc:
+    image: 'zaucy/bazel:0.26.1-gcc'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.26.1
+        - COMPILER_VERSION=9
+  bazel-0-26-1-gcc-9:
+    image: 'zaucy/bazel:0.26.1-gcc-9'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.26.1
+        - COMPILER_VERSION=9
+  bazel-0-26-1-gcc-9-2:
+    image: 'zaucy/bazel:0.26.1-gcc-9.2'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.26.1
+        - COMPILER_VERSION=9.2
+  bazel-0-26-1-gcc-9-2-0:
+    image: 'zaucy/bazel:0.26.1-gcc-9.2.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.26.1
+        - COMPILER_VERSION=9.2.0
+  bazel-0-26-1-gcc-8:
+    image: 'zaucy/bazel:0.26.1-gcc-8'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.26.1
+        - COMPILER_VERSION=8
+  bazel-0-26-1-gcc-8-3:
+    image: 'zaucy/bazel:0.26.1-gcc-8.3'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.26.1
+        - COMPILER_VERSION=8.3
+  bazel-0-26-1-gcc-8-3-0:
+    image: 'zaucy/bazel:0.26.1-gcc-8.3.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.26.1
+        - COMPILER_VERSION=8.3.0
+  bazel-0-26-1-gcc-7:
+    image: 'zaucy/bazel:0.26.1-gcc-7'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.26.1
+        - COMPILER_VERSION=7
+  bazel-0-26-1-gcc-7-3:
+    image: 'zaucy/bazel:0.26.1-gcc-7.3'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.26.1
+        - COMPILER_VERSION=7.3
+  bazel-0-26-1-gcc-7-3-0:
+    image: 'zaucy/bazel:0.26.1-gcc-7.3.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.26.1
+        - COMPILER_VERSION=7.3.0
+  bazel-0-26-1-gcc-6:
+    image: 'zaucy/bazel:0.26.1-gcc-6'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.26.1
+        - COMPILER_VERSION=6
+  bazel-0-26-1-gcc-6-4:
+    image: 'zaucy/bazel:0.26.1-gcc-6.4'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.26.1
+        - COMPILER_VERSION=6.4
+  bazel-0-26-1-gcc-6-4-0:
+    image: 'zaucy/bazel:0.26.1-gcc-6.4.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.26.1
+        - COMPILER_VERSION=6.4.0
+  bazel-0-26-1-gcc-5:
+    image: 'zaucy/bazel:0.26.1-gcc-5'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.26.1
+        - COMPILER_VERSION=5
+  bazel-0-26-1-gcc-5-5:
+    image: 'zaucy/bazel:0.26.1-gcc-5.5'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.26.1
+        - COMPILER_VERSION=5.5
+  bazel-0-26-1-gcc-5-5-0:
+    image: 'zaucy/bazel:0.26.1-gcc-5.5.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.26.1
+        - COMPILER_VERSION=5.5.0
+  bazel-0-26-1-gcc-4:
+    image: 'zaucy/bazel:0.26.1-gcc-4'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.26.1
+        - COMPILER_VERSION=4
+  bazel-0-26-1-gcc-4-9:
+    image: 'zaucy/bazel:0.26.1-gcc-4.9'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.26.1
+        - COMPILER_VERSION=4.9
+  bazel-0-26-1-gcc-4-9-4:
+    image: 'zaucy/bazel:0.26.1-gcc-4.9.4'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.26.1
+        - COMPILER_VERSION=4.9.4
+  bazel-0-25-3-gcc:
+    image: 'zaucy/bazel:0.25.3-gcc'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.25.3
+        - COMPILER_VERSION=9
+  bazel-0-25-3-gcc-9:
+    image: 'zaucy/bazel:0.25.3-gcc-9'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.25.3
+        - COMPILER_VERSION=9
+  bazel-0-25-3-gcc-9-2:
+    image: 'zaucy/bazel:0.25.3-gcc-9.2'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.25.3
+        - COMPILER_VERSION=9.2
+  bazel-0-25-3-gcc-9-2-0:
+    image: 'zaucy/bazel:0.25.3-gcc-9.2.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.25.3
+        - COMPILER_VERSION=9.2.0
+  bazel-0-25-3-gcc-8:
+    image: 'zaucy/bazel:0.25.3-gcc-8'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.25.3
+        - COMPILER_VERSION=8
+  bazel-0-25-3-gcc-8-3:
+    image: 'zaucy/bazel:0.25.3-gcc-8.3'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.25.3
+        - COMPILER_VERSION=8.3
+  bazel-0-25-3-gcc-8-3-0:
+    image: 'zaucy/bazel:0.25.3-gcc-8.3.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.25.3
+        - COMPILER_VERSION=8.3.0
+  bazel-0-25-3-gcc-7:
+    image: 'zaucy/bazel:0.25.3-gcc-7'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.25.3
+        - COMPILER_VERSION=7
+  bazel-0-25-3-gcc-7-3:
+    image: 'zaucy/bazel:0.25.3-gcc-7.3'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.25.3
+        - COMPILER_VERSION=7.3
+  bazel-0-25-3-gcc-7-3-0:
+    image: 'zaucy/bazel:0.25.3-gcc-7.3.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.25.3
+        - COMPILER_VERSION=7.3.0
+  bazel-0-25-3-gcc-6:
+    image: 'zaucy/bazel:0.25.3-gcc-6'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.25.3
+        - COMPILER_VERSION=6
+  bazel-0-25-3-gcc-6-4:
+    image: 'zaucy/bazel:0.25.3-gcc-6.4'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.25.3
+        - COMPILER_VERSION=6.4
+  bazel-0-25-3-gcc-6-4-0:
+    image: 'zaucy/bazel:0.25.3-gcc-6.4.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.25.3
+        - COMPILER_VERSION=6.4.0
+  bazel-0-25-3-gcc-5:
+    image: 'zaucy/bazel:0.25.3-gcc-5'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.25.3
+        - COMPILER_VERSION=5
+  bazel-0-25-3-gcc-5-5:
+    image: 'zaucy/bazel:0.25.3-gcc-5.5'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.25.3
+        - COMPILER_VERSION=5.5
+  bazel-0-25-3-gcc-5-5-0:
+    image: 'zaucy/bazel:0.25.3-gcc-5.5.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.25.3
+        - COMPILER_VERSION=5.5.0
+  bazel-0-25-3-gcc-4:
+    image: 'zaucy/bazel:0.25.3-gcc-4'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.25.3
+        - COMPILER_VERSION=4
+  bazel-0-25-3-gcc-4-9:
+    image: 'zaucy/bazel:0.25.3-gcc-4.9'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.25.3
+        - COMPILER_VERSION=4.9
+  bazel-0-25-3-gcc-4-9-4:
+    image: 'zaucy/bazel:0.25.3-gcc-4.9.4'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.25.3
+        - COMPILER_VERSION=4.9.4
+  bazel-0-24-1-gcc:
+    image: 'zaucy/bazel:0.24.1-gcc'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.24.1
+        - COMPILER_VERSION=9
+  bazel-0-24-1-gcc-9:
+    image: 'zaucy/bazel:0.24.1-gcc-9'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.24.1
+        - COMPILER_VERSION=9
+  bazel-0-24-1-gcc-9-2:
+    image: 'zaucy/bazel:0.24.1-gcc-9.2'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.24.1
+        - COMPILER_VERSION=9.2
+  bazel-0-24-1-gcc-9-2-0:
+    image: 'zaucy/bazel:0.24.1-gcc-9.2.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.24.1
+        - COMPILER_VERSION=9.2.0
+  bazel-0-24-1-gcc-8:
+    image: 'zaucy/bazel:0.24.1-gcc-8'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.24.1
+        - COMPILER_VERSION=8
+  bazel-0-24-1-gcc-8-3:
+    image: 'zaucy/bazel:0.24.1-gcc-8.3'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.24.1
+        - COMPILER_VERSION=8.3
+  bazel-0-24-1-gcc-8-3-0:
+    image: 'zaucy/bazel:0.24.1-gcc-8.3.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.24.1
+        - COMPILER_VERSION=8.3.0
+  bazel-0-24-1-gcc-7:
+    image: 'zaucy/bazel:0.24.1-gcc-7'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.24.1
+        - COMPILER_VERSION=7
+  bazel-0-24-1-gcc-7-3:
+    image: 'zaucy/bazel:0.24.1-gcc-7.3'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.24.1
+        - COMPILER_VERSION=7.3
+  bazel-0-24-1-gcc-7-3-0:
+    image: 'zaucy/bazel:0.24.1-gcc-7.3.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.24.1
+        - COMPILER_VERSION=7.3.0
+  bazel-0-24-1-gcc-6:
+    image: 'zaucy/bazel:0.24.1-gcc-6'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.24.1
+        - COMPILER_VERSION=6
+  bazel-0-24-1-gcc-6-4:
+    image: 'zaucy/bazel:0.24.1-gcc-6.4'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.24.1
+        - COMPILER_VERSION=6.4
+  bazel-0-24-1-gcc-6-4-0:
+    image: 'zaucy/bazel:0.24.1-gcc-6.4.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.24.1
+        - COMPILER_VERSION=6.4.0
+  bazel-0-24-1-gcc-5:
+    image: 'zaucy/bazel:0.24.1-gcc-5'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.24.1
+        - COMPILER_VERSION=5
+  bazel-0-24-1-gcc-5-5:
+    image: 'zaucy/bazel:0.24.1-gcc-5.5'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.24.1
+        - COMPILER_VERSION=5.5
+  bazel-0-24-1-gcc-5-5-0:
+    image: 'zaucy/bazel:0.24.1-gcc-5.5.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.24.1
+        - COMPILER_VERSION=5.5.0
+  bazel-0-24-1-gcc-4:
+    image: 'zaucy/bazel:0.24.1-gcc-4'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.24.1
+        - COMPILER_VERSION=4
+  bazel-0-24-1-gcc-4-9:
+    image: 'zaucy/bazel:0.24.1-gcc-4.9'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.24.1
+        - COMPILER_VERSION=4.9
+  bazel-0-24-1-gcc-4-9-4:
+    image: 'zaucy/bazel:0.24.1-gcc-4.9.4'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.24.1
+        - COMPILER_VERSION=4.9.4
+  bazel-0-23-2-gcc:
+    image: 'zaucy/bazel:0.23.2-gcc'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.23.2
+        - COMPILER_VERSION=9
+  bazel-0-23-2-gcc-9:
+    image: 'zaucy/bazel:0.23.2-gcc-9'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.23.2
+        - COMPILER_VERSION=9
+  bazel-0-23-2-gcc-9-2:
+    image: 'zaucy/bazel:0.23.2-gcc-9.2'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.23.2
+        - COMPILER_VERSION=9.2
+  bazel-0-23-2-gcc-9-2-0:
+    image: 'zaucy/bazel:0.23.2-gcc-9.2.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.23.2
+        - COMPILER_VERSION=9.2.0
+  bazel-0-23-2-gcc-8:
+    image: 'zaucy/bazel:0.23.2-gcc-8'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.23.2
+        - COMPILER_VERSION=8
+  bazel-0-23-2-gcc-8-3:
+    image: 'zaucy/bazel:0.23.2-gcc-8.3'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.23.2
+        - COMPILER_VERSION=8.3
+  bazel-0-23-2-gcc-8-3-0:
+    image: 'zaucy/bazel:0.23.2-gcc-8.3.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.23.2
+        - COMPILER_VERSION=8.3.0
+  bazel-0-23-2-gcc-7:
+    image: 'zaucy/bazel:0.23.2-gcc-7'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.23.2
+        - COMPILER_VERSION=7
+  bazel-0-23-2-gcc-7-3:
+    image: 'zaucy/bazel:0.23.2-gcc-7.3'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.23.2
+        - COMPILER_VERSION=7.3
+  bazel-0-23-2-gcc-7-3-0:
+    image: 'zaucy/bazel:0.23.2-gcc-7.3.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.23.2
+        - COMPILER_VERSION=7.3.0
+  bazel-0-23-2-gcc-6:
+    image: 'zaucy/bazel:0.23.2-gcc-6'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.23.2
+        - COMPILER_VERSION=6
+  bazel-0-23-2-gcc-6-4:
+    image: 'zaucy/bazel:0.23.2-gcc-6.4'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.23.2
+        - COMPILER_VERSION=6.4
+  bazel-0-23-2-gcc-6-4-0:
+    image: 'zaucy/bazel:0.23.2-gcc-6.4.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.23.2
+        - COMPILER_VERSION=6.4.0
+  bazel-0-23-2-gcc-5:
+    image: 'zaucy/bazel:0.23.2-gcc-5'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.23.2
+        - COMPILER_VERSION=5
+  bazel-0-23-2-gcc-5-5:
+    image: 'zaucy/bazel:0.23.2-gcc-5.5'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.23.2
+        - COMPILER_VERSION=5.5
+  bazel-0-23-2-gcc-5-5-0:
+    image: 'zaucy/bazel:0.23.2-gcc-5.5.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.23.2
+        - COMPILER_VERSION=5.5.0
+  bazel-0-23-2-gcc-4:
+    image: 'zaucy/bazel:0.23.2-gcc-4'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.23.2
+        - COMPILER_VERSION=4
+  bazel-0-23-2-gcc-4-9:
+    image: 'zaucy/bazel:0.23.2-gcc-4.9'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.23.2
+        - COMPILER_VERSION=4.9
+  bazel-0-23-2-gcc-4-9-4:
+    image: 'zaucy/bazel:0.23.2-gcc-4.9.4'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.23.2
         - COMPILER_VERSION=4.9.4
   bazel-0-23-0-gcc:
     image: 'zaucy/bazel:0.23.0-gcc'
@@ -230,7 +1868,28 @@ services:
       context: gcc
       args:
         - BAZEL_VERSION=0.23.0
-        - COMPILER_VERSION=8
+        - COMPILER_VERSION=9
+  bazel-0-23-0-gcc-9:
+    image: 'zaucy/bazel:0.23.0-gcc-9'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.23.0
+        - COMPILER_VERSION=9
+  bazel-0-23-0-gcc-9-2:
+    image: 'zaucy/bazel:0.23.0-gcc-9.2'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.23.0
+        - COMPILER_VERSION=9.2
+  bazel-0-23-0-gcc-9-2-0:
+    image: 'zaucy/bazel:0.23.0-gcc-9.2.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.23.0
+        - COMPILER_VERSION=9.2.0
   bazel-0-23-0-gcc-8:
     image: 'zaucy/bazel:0.23.0-gcc-8'
     build:
@@ -238,20 +1897,20 @@ services:
       args:
         - BAZEL_VERSION=0.23.0
         - COMPILER_VERSION=8
-  bazel-0-23-0-gcc-8-2:
-    image: 'zaucy/bazel:0.23.0-gcc-8.2'
+  bazel-0-23-0-gcc-8-3:
+    image: 'zaucy/bazel:0.23.0-gcc-8.3'
     build:
       context: gcc
       args:
         - BAZEL_VERSION=0.23.0
-        - COMPILER_VERSION=8.2
-  bazel-0-23-0-gcc-8-2-0:
-    image: 'zaucy/bazel:0.23.0-gcc-8.2.0'
+        - COMPILER_VERSION=8.3
+  bazel-0-23-0-gcc-8-3-0:
+    image: 'zaucy/bazel:0.23.0-gcc-8.3.0'
     build:
       context: gcc
       args:
         - BAZEL_VERSION=0.23.0
-        - COMPILER_VERSION=8.2.0
+        - COMPILER_VERSION=8.3.0
   bazel-0-23-0-gcc-7:
     image: 'zaucy/bazel:0.23.0-gcc-7'
     build:
@@ -342,7 +2001,28 @@ services:
       context: gcc
       args:
         - BAZEL_VERSION=0.22.0
-        - COMPILER_VERSION=8
+        - COMPILER_VERSION=9
+  bazel-0-22-0-gcc-9:
+    image: 'zaucy/bazel:0.22.0-gcc-9'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.22.0
+        - COMPILER_VERSION=9
+  bazel-0-22-0-gcc-9-2:
+    image: 'zaucy/bazel:0.22.0-gcc-9.2'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.22.0
+        - COMPILER_VERSION=9.2
+  bazel-0-22-0-gcc-9-2-0:
+    image: 'zaucy/bazel:0.22.0-gcc-9.2.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.22.0
+        - COMPILER_VERSION=9.2.0
   bazel-0-22-0-gcc-8:
     image: 'zaucy/bazel:0.22.0-gcc-8'
     build:
@@ -350,20 +2030,20 @@ services:
       args:
         - BAZEL_VERSION=0.22.0
         - COMPILER_VERSION=8
-  bazel-0-22-0-gcc-8-2:
-    image: 'zaucy/bazel:0.22.0-gcc-8.2'
+  bazel-0-22-0-gcc-8-3:
+    image: 'zaucy/bazel:0.22.0-gcc-8.3'
     build:
       context: gcc
       args:
         - BAZEL_VERSION=0.22.0
-        - COMPILER_VERSION=8.2
-  bazel-0-22-0-gcc-8-2-0:
-    image: 'zaucy/bazel:0.22.0-gcc-8.2.0'
+        - COMPILER_VERSION=8.3
+  bazel-0-22-0-gcc-8-3-0:
+    image: 'zaucy/bazel:0.22.0-gcc-8.3.0'
     build:
       context: gcc
       args:
         - BAZEL_VERSION=0.22.0
-        - COMPILER_VERSION=8.2.0
+        - COMPILER_VERSION=8.3.0
   bazel-0-22-0-gcc-7:
     image: 'zaucy/bazel:0.22.0-gcc-7'
     build:
@@ -454,7 +2134,28 @@ services:
       context: gcc
       args:
         - BAZEL_VERSION=0.21.0
-        - COMPILER_VERSION=8
+        - COMPILER_VERSION=9
+  bazel-0-21-0-gcc-9:
+    image: 'zaucy/bazel:0.21.0-gcc-9'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.21.0
+        - COMPILER_VERSION=9
+  bazel-0-21-0-gcc-9-2:
+    image: 'zaucy/bazel:0.21.0-gcc-9.2'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.21.0
+        - COMPILER_VERSION=9.2
+  bazel-0-21-0-gcc-9-2-0:
+    image: 'zaucy/bazel:0.21.0-gcc-9.2.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.21.0
+        - COMPILER_VERSION=9.2.0
   bazel-0-21-0-gcc-8:
     image: 'zaucy/bazel:0.21.0-gcc-8'
     build:
@@ -462,20 +2163,20 @@ services:
       args:
         - BAZEL_VERSION=0.21.0
         - COMPILER_VERSION=8
-  bazel-0-21-0-gcc-8-2:
-    image: 'zaucy/bazel:0.21.0-gcc-8.2'
+  bazel-0-21-0-gcc-8-3:
+    image: 'zaucy/bazel:0.21.0-gcc-8.3'
     build:
       context: gcc
       args:
         - BAZEL_VERSION=0.21.0
-        - COMPILER_VERSION=8.2
-  bazel-0-21-0-gcc-8-2-0:
-    image: 'zaucy/bazel:0.21.0-gcc-8.2.0'
+        - COMPILER_VERSION=8.3
+  bazel-0-21-0-gcc-8-3-0:
+    image: 'zaucy/bazel:0.21.0-gcc-8.3.0'
     build:
       context: gcc
       args:
         - BAZEL_VERSION=0.21.0
-        - COMPILER_VERSION=8.2.0
+        - COMPILER_VERSION=8.3.0
   bazel-0-21-0-gcc-7:
     image: 'zaucy/bazel:0.21.0-gcc-7'
     build:
@@ -566,7 +2267,28 @@ services:
       context: gcc
       args:
         - BAZEL_VERSION=0.20.0
-        - COMPILER_VERSION=8
+        - COMPILER_VERSION=9
+  bazel-0-20-0-gcc-9:
+    image: 'zaucy/bazel:0.20.0-gcc-9'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.20.0
+        - COMPILER_VERSION=9
+  bazel-0-20-0-gcc-9-2:
+    image: 'zaucy/bazel:0.20.0-gcc-9.2'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.20.0
+        - COMPILER_VERSION=9.2
+  bazel-0-20-0-gcc-9-2-0:
+    image: 'zaucy/bazel:0.20.0-gcc-9.2.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.20.0
+        - COMPILER_VERSION=9.2.0
   bazel-0-20-0-gcc-8:
     image: 'zaucy/bazel:0.20.0-gcc-8'
     build:
@@ -574,20 +2296,20 @@ services:
       args:
         - BAZEL_VERSION=0.20.0
         - COMPILER_VERSION=8
-  bazel-0-20-0-gcc-8-2:
-    image: 'zaucy/bazel:0.20.0-gcc-8.2'
+  bazel-0-20-0-gcc-8-3:
+    image: 'zaucy/bazel:0.20.0-gcc-8.3'
     build:
       context: gcc
       args:
         - BAZEL_VERSION=0.20.0
-        - COMPILER_VERSION=8.2
-  bazel-0-20-0-gcc-8-2-0:
-    image: 'zaucy/bazel:0.20.0-gcc-8.2.0'
+        - COMPILER_VERSION=8.3
+  bazel-0-20-0-gcc-8-3-0:
+    image: 'zaucy/bazel:0.20.0-gcc-8.3.0'
     build:
       context: gcc
       args:
         - BAZEL_VERSION=0.20.0
-        - COMPILER_VERSION=8.2.0
+        - COMPILER_VERSION=8.3.0
   bazel-0-20-0-gcc-7:
     image: 'zaucy/bazel:0.20.0-gcc-7'
     build:
@@ -678,7 +2400,28 @@ services:
       context: gcc
       args:
         - BAZEL_VERSION=0.19.2
-        - COMPILER_VERSION=8
+        - COMPILER_VERSION=9
+  bazel-0-19-2-gcc-9:
+    image: 'zaucy/bazel:0.19.2-gcc-9'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.19.2
+        - COMPILER_VERSION=9
+  bazel-0-19-2-gcc-9-2:
+    image: 'zaucy/bazel:0.19.2-gcc-9.2'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.19.2
+        - COMPILER_VERSION=9.2
+  bazel-0-19-2-gcc-9-2-0:
+    image: 'zaucy/bazel:0.19.2-gcc-9.2.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.19.2
+        - COMPILER_VERSION=9.2.0
   bazel-0-19-2-gcc-8:
     image: 'zaucy/bazel:0.19.2-gcc-8'
     build:
@@ -686,20 +2429,20 @@ services:
       args:
         - BAZEL_VERSION=0.19.2
         - COMPILER_VERSION=8
-  bazel-0-19-2-gcc-8-2:
-    image: 'zaucy/bazel:0.19.2-gcc-8.2'
+  bazel-0-19-2-gcc-8-3:
+    image: 'zaucy/bazel:0.19.2-gcc-8.3'
     build:
       context: gcc
       args:
         - BAZEL_VERSION=0.19.2
-        - COMPILER_VERSION=8.2
-  bazel-0-19-2-gcc-8-2-0:
-    image: 'zaucy/bazel:0.19.2-gcc-8.2.0'
+        - COMPILER_VERSION=8.3
+  bazel-0-19-2-gcc-8-3-0:
+    image: 'zaucy/bazel:0.19.2-gcc-8.3.0'
     build:
       context: gcc
       args:
         - BAZEL_VERSION=0.19.2
-        - COMPILER_VERSION=8.2.0
+        - COMPILER_VERSION=8.3.0
   bazel-0-19-2-gcc-7:
     image: 'zaucy/bazel:0.19.2-gcc-7'
     build:
@@ -790,7 +2533,28 @@ services:
       context: gcc
       args:
         - BAZEL_VERSION=0.19.1
-        - COMPILER_VERSION=8
+        - COMPILER_VERSION=9
+  bazel-0-19-1-gcc-9:
+    image: 'zaucy/bazel:0.19.1-gcc-9'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.19.1
+        - COMPILER_VERSION=9
+  bazel-0-19-1-gcc-9-2:
+    image: 'zaucy/bazel:0.19.1-gcc-9.2'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.19.1
+        - COMPILER_VERSION=9.2
+  bazel-0-19-1-gcc-9-2-0:
+    image: 'zaucy/bazel:0.19.1-gcc-9.2.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.19.1
+        - COMPILER_VERSION=9.2.0
   bazel-0-19-1-gcc-8:
     image: 'zaucy/bazel:0.19.1-gcc-8'
     build:
@@ -798,20 +2562,20 @@ services:
       args:
         - BAZEL_VERSION=0.19.1
         - COMPILER_VERSION=8
-  bazel-0-19-1-gcc-8-2:
-    image: 'zaucy/bazel:0.19.1-gcc-8.2'
+  bazel-0-19-1-gcc-8-3:
+    image: 'zaucy/bazel:0.19.1-gcc-8.3'
     build:
       context: gcc
       args:
         - BAZEL_VERSION=0.19.1
-        - COMPILER_VERSION=8.2
-  bazel-0-19-1-gcc-8-2-0:
-    image: 'zaucy/bazel:0.19.1-gcc-8.2.0'
+        - COMPILER_VERSION=8.3
+  bazel-0-19-1-gcc-8-3-0:
+    image: 'zaucy/bazel:0.19.1-gcc-8.3.0'
     build:
       context: gcc
       args:
         - BAZEL_VERSION=0.19.1
-        - COMPILER_VERSION=8.2.0
+        - COMPILER_VERSION=8.3.0
   bazel-0-19-1-gcc-7:
     image: 'zaucy/bazel:0.19.1-gcc-7'
     build:
@@ -896,125 +2660,34 @@ services:
       args:
         - BAZEL_VERSION=0.19.1
         - COMPILER_VERSION=4.9.4
-  bazel-0-19-0-gcc:
-    image: 'zaucy/bazel:0.19.0-gcc'
-    build:
-      context: gcc
-      args:
-        - BAZEL_VERSION=0.19.0
-        - COMPILER_VERSION=8
-  bazel-0-19-0-gcc-8:
-    image: 'zaucy/bazel:0.19.0-gcc-8'
-    build:
-      context: gcc
-      args:
-        - BAZEL_VERSION=0.19.0
-        - COMPILER_VERSION=8
-  bazel-0-19-0-gcc-8-2:
-    image: 'zaucy/bazel:0.19.0-gcc-8.2'
-    build:
-      context: gcc
-      args:
-        - BAZEL_VERSION=0.19.0
-        - COMPILER_VERSION=8.2
-  bazel-0-19-0-gcc-8-2-0:
-    image: 'zaucy/bazel:0.19.0-gcc-8.2.0'
-    build:
-      context: gcc
-      args:
-        - BAZEL_VERSION=0.19.0
-        - COMPILER_VERSION=8.2.0
-  bazel-0-19-0-gcc-7:
-    image: 'zaucy/bazel:0.19.0-gcc-7'
-    build:
-      context: gcc
-      args:
-        - BAZEL_VERSION=0.19.0
-        - COMPILER_VERSION=7
-  bazel-0-19-0-gcc-7-3:
-    image: 'zaucy/bazel:0.19.0-gcc-7.3'
-    build:
-      context: gcc
-      args:
-        - BAZEL_VERSION=0.19.0
-        - COMPILER_VERSION=7.3
-  bazel-0-19-0-gcc-7-3-0:
-    image: 'zaucy/bazel:0.19.0-gcc-7.3.0'
-    build:
-      context: gcc
-      args:
-        - BAZEL_VERSION=0.19.0
-        - COMPILER_VERSION=7.3.0
-  bazel-0-19-0-gcc-6:
-    image: 'zaucy/bazel:0.19.0-gcc-6'
-    build:
-      context: gcc
-      args:
-        - BAZEL_VERSION=0.19.0
-        - COMPILER_VERSION=6
-  bazel-0-19-0-gcc-6-4:
-    image: 'zaucy/bazel:0.19.0-gcc-6.4'
-    build:
-      context: gcc
-      args:
-        - BAZEL_VERSION=0.19.0
-        - COMPILER_VERSION=6.4
-  bazel-0-19-0-gcc-6-4-0:
-    image: 'zaucy/bazel:0.19.0-gcc-6.4.0'
-    build:
-      context: gcc
-      args:
-        - BAZEL_VERSION=0.19.0
-        - COMPILER_VERSION=6.4.0
-  bazel-0-19-0-gcc-5:
-    image: 'zaucy/bazel:0.19.0-gcc-5'
-    build:
-      context: gcc
-      args:
-        - BAZEL_VERSION=0.19.0
-        - COMPILER_VERSION=5
-  bazel-0-19-0-gcc-5-5:
-    image: 'zaucy/bazel:0.19.0-gcc-5.5'
-    build:
-      context: gcc
-      args:
-        - BAZEL_VERSION=0.19.0
-        - COMPILER_VERSION=5.5
-  bazel-0-19-0-gcc-5-5-0:
-    image: 'zaucy/bazel:0.19.0-gcc-5.5.0'
-    build:
-      context: gcc
-      args:
-        - BAZEL_VERSION=0.19.0
-        - COMPILER_VERSION=5.5.0
-  bazel-0-19-0-gcc-4:
-    image: 'zaucy/bazel:0.19.0-gcc-4'
-    build:
-      context: gcc
-      args:
-        - BAZEL_VERSION=0.19.0
-        - COMPILER_VERSION=4
-  bazel-0-19-0-gcc-4-9:
-    image: 'zaucy/bazel:0.19.0-gcc-4.9'
-    build:
-      context: gcc
-      args:
-        - BAZEL_VERSION=0.19.0
-        - COMPILER_VERSION=4.9
-  bazel-0-19-0-gcc-4-9-4:
-    image: 'zaucy/bazel:0.19.0-gcc-4.9.4'
-    build:
-      context: gcc
-      args:
-        - BAZEL_VERSION=0.19.0
-        - COMPILER_VERSION=4.9.4
   bazel-0-18-1-gcc:
     image: 'zaucy/bazel:0.18.1-gcc'
     build:
       context: gcc
       args:
         - BAZEL_VERSION=0.18.1
-        - COMPILER_VERSION=8
+        - COMPILER_VERSION=9
+  bazel-0-18-1-gcc-9:
+    image: 'zaucy/bazel:0.18.1-gcc-9'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.18.1
+        - COMPILER_VERSION=9
+  bazel-0-18-1-gcc-9-2:
+    image: 'zaucy/bazel:0.18.1-gcc-9.2'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.18.1
+        - COMPILER_VERSION=9.2
+  bazel-0-18-1-gcc-9-2-0:
+    image: 'zaucy/bazel:0.18.1-gcc-9.2.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.18.1
+        - COMPILER_VERSION=9.2.0
   bazel-0-18-1-gcc-8:
     image: 'zaucy/bazel:0.18.1-gcc-8'
     build:
@@ -1022,20 +2695,20 @@ services:
       args:
         - BAZEL_VERSION=0.18.1
         - COMPILER_VERSION=8
-  bazel-0-18-1-gcc-8-2:
-    image: 'zaucy/bazel:0.18.1-gcc-8.2'
+  bazel-0-18-1-gcc-8-3:
+    image: 'zaucy/bazel:0.18.1-gcc-8.3'
     build:
       context: gcc
       args:
         - BAZEL_VERSION=0.18.1
-        - COMPILER_VERSION=8.2
-  bazel-0-18-1-gcc-8-2-0:
-    image: 'zaucy/bazel:0.18.1-gcc-8.2.0'
+        - COMPILER_VERSION=8.3
+  bazel-0-18-1-gcc-8-3-0:
+    image: 'zaucy/bazel:0.18.1-gcc-8.3.0'
     build:
       context: gcc
       args:
         - BAZEL_VERSION=0.18.1
-        - COMPILER_VERSION=8.2.0
+        - COMPILER_VERSION=8.3.0
   bazel-0-18-1-gcc-7:
     image: 'zaucy/bazel:0.18.1-gcc-7'
     build:
@@ -1120,125 +2793,34 @@ services:
       args:
         - BAZEL_VERSION=0.18.1
         - COMPILER_VERSION=4.9.4
-  bazel-0-18-0-gcc:
-    image: 'zaucy/bazel:0.18.0-gcc'
-    build:
-      context: gcc
-      args:
-        - BAZEL_VERSION=0.18.0
-        - COMPILER_VERSION=8
-  bazel-0-18-0-gcc-8:
-    image: 'zaucy/bazel:0.18.0-gcc-8'
-    build:
-      context: gcc
-      args:
-        - BAZEL_VERSION=0.18.0
-        - COMPILER_VERSION=8
-  bazel-0-18-0-gcc-8-2:
-    image: 'zaucy/bazel:0.18.0-gcc-8.2'
-    build:
-      context: gcc
-      args:
-        - BAZEL_VERSION=0.18.0
-        - COMPILER_VERSION=8.2
-  bazel-0-18-0-gcc-8-2-0:
-    image: 'zaucy/bazel:0.18.0-gcc-8.2.0'
-    build:
-      context: gcc
-      args:
-        - BAZEL_VERSION=0.18.0
-        - COMPILER_VERSION=8.2.0
-  bazel-0-18-0-gcc-7:
-    image: 'zaucy/bazel:0.18.0-gcc-7'
-    build:
-      context: gcc
-      args:
-        - BAZEL_VERSION=0.18.0
-        - COMPILER_VERSION=7
-  bazel-0-18-0-gcc-7-3:
-    image: 'zaucy/bazel:0.18.0-gcc-7.3'
-    build:
-      context: gcc
-      args:
-        - BAZEL_VERSION=0.18.0
-        - COMPILER_VERSION=7.3
-  bazel-0-18-0-gcc-7-3-0:
-    image: 'zaucy/bazel:0.18.0-gcc-7.3.0'
-    build:
-      context: gcc
-      args:
-        - BAZEL_VERSION=0.18.0
-        - COMPILER_VERSION=7.3.0
-  bazel-0-18-0-gcc-6:
-    image: 'zaucy/bazel:0.18.0-gcc-6'
-    build:
-      context: gcc
-      args:
-        - BAZEL_VERSION=0.18.0
-        - COMPILER_VERSION=6
-  bazel-0-18-0-gcc-6-4:
-    image: 'zaucy/bazel:0.18.0-gcc-6.4'
-    build:
-      context: gcc
-      args:
-        - BAZEL_VERSION=0.18.0
-        - COMPILER_VERSION=6.4
-  bazel-0-18-0-gcc-6-4-0:
-    image: 'zaucy/bazel:0.18.0-gcc-6.4.0'
-    build:
-      context: gcc
-      args:
-        - BAZEL_VERSION=0.18.0
-        - COMPILER_VERSION=6.4.0
-  bazel-0-18-0-gcc-5:
-    image: 'zaucy/bazel:0.18.0-gcc-5'
-    build:
-      context: gcc
-      args:
-        - BAZEL_VERSION=0.18.0
-        - COMPILER_VERSION=5
-  bazel-0-18-0-gcc-5-5:
-    image: 'zaucy/bazel:0.18.0-gcc-5.5'
-    build:
-      context: gcc
-      args:
-        - BAZEL_VERSION=0.18.0
-        - COMPILER_VERSION=5.5
-  bazel-0-18-0-gcc-5-5-0:
-    image: 'zaucy/bazel:0.18.0-gcc-5.5.0'
-    build:
-      context: gcc
-      args:
-        - BAZEL_VERSION=0.18.0
-        - COMPILER_VERSION=5.5.0
-  bazel-0-18-0-gcc-4:
-    image: 'zaucy/bazel:0.18.0-gcc-4'
-    build:
-      context: gcc
-      args:
-        - BAZEL_VERSION=0.18.0
-        - COMPILER_VERSION=4
-  bazel-0-18-0-gcc-4-9:
-    image: 'zaucy/bazel:0.18.0-gcc-4.9'
-    build:
-      context: gcc
-      args:
-        - BAZEL_VERSION=0.18.0
-        - COMPILER_VERSION=4.9
-  bazel-0-18-0-gcc-4-9-4:
-    image: 'zaucy/bazel:0.18.0-gcc-4.9.4'
-    build:
-      context: gcc
-      args:
-        - BAZEL_VERSION=0.18.0
-        - COMPILER_VERSION=4.9.4
   bazel-0-17-2-gcc:
     image: 'zaucy/bazel:0.17.2-gcc'
     build:
       context: gcc
       args:
         - BAZEL_VERSION=0.17.2
-        - COMPILER_VERSION=8
+        - COMPILER_VERSION=9
+  bazel-0-17-2-gcc-9:
+    image: 'zaucy/bazel:0.17.2-gcc-9'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.17.2
+        - COMPILER_VERSION=9
+  bazel-0-17-2-gcc-9-2:
+    image: 'zaucy/bazel:0.17.2-gcc-9.2'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.17.2
+        - COMPILER_VERSION=9.2
+  bazel-0-17-2-gcc-9-2-0:
+    image: 'zaucy/bazel:0.17.2-gcc-9.2.0'
+    build:
+      context: gcc
+      args:
+        - BAZEL_VERSION=0.17.2
+        - COMPILER_VERSION=9.2.0
   bazel-0-17-2-gcc-8:
     image: 'zaucy/bazel:0.17.2-gcc-8'
     build:
@@ -1246,20 +2828,20 @@ services:
       args:
         - BAZEL_VERSION=0.17.2
         - COMPILER_VERSION=8
-  bazel-0-17-2-gcc-8-2:
-    image: 'zaucy/bazel:0.17.2-gcc-8.2'
+  bazel-0-17-2-gcc-8-3:
+    image: 'zaucy/bazel:0.17.2-gcc-8.3'
     build:
       context: gcc
       args:
         - BAZEL_VERSION=0.17.2
-        - COMPILER_VERSION=8.2
-  bazel-0-17-2-gcc-8-2-0:
-    image: 'zaucy/bazel:0.17.2-gcc-8.2.0'
+        - COMPILER_VERSION=8.3
+  bazel-0-17-2-gcc-8-3-0:
+    image: 'zaucy/bazel:0.17.2-gcc-8.3.0'
     build:
       context: gcc
       args:
         - BAZEL_VERSION=0.17.2
-        - COMPILER_VERSION=8.2.0
+        - COMPILER_VERSION=8.3.0
   bazel-0-17-2-gcc-7:
     image: 'zaucy/bazel:0.17.2-gcc-7'
     build:
@@ -1343,116 +2925,4 @@ services:
       context: gcc
       args:
         - BAZEL_VERSION=0.17.2
-        - COMPILER_VERSION=4.9.4
-  bazel-0-17-1-gcc:
-    image: 'zaucy/bazel:0.17.1-gcc'
-    build:
-      context: gcc
-      args:
-        - BAZEL_VERSION=0.17.1
-        - COMPILER_VERSION=8
-  bazel-0-17-1-gcc-8:
-    image: 'zaucy/bazel:0.17.1-gcc-8'
-    build:
-      context: gcc
-      args:
-        - BAZEL_VERSION=0.17.1
-        - COMPILER_VERSION=8
-  bazel-0-17-1-gcc-8-2:
-    image: 'zaucy/bazel:0.17.1-gcc-8.2'
-    build:
-      context: gcc
-      args:
-        - BAZEL_VERSION=0.17.1
-        - COMPILER_VERSION=8.2
-  bazel-0-17-1-gcc-8-2-0:
-    image: 'zaucy/bazel:0.17.1-gcc-8.2.0'
-    build:
-      context: gcc
-      args:
-        - BAZEL_VERSION=0.17.1
-        - COMPILER_VERSION=8.2.0
-  bazel-0-17-1-gcc-7:
-    image: 'zaucy/bazel:0.17.1-gcc-7'
-    build:
-      context: gcc
-      args:
-        - BAZEL_VERSION=0.17.1
-        - COMPILER_VERSION=7
-  bazel-0-17-1-gcc-7-3:
-    image: 'zaucy/bazel:0.17.1-gcc-7.3'
-    build:
-      context: gcc
-      args:
-        - BAZEL_VERSION=0.17.1
-        - COMPILER_VERSION=7.3
-  bazel-0-17-1-gcc-7-3-0:
-    image: 'zaucy/bazel:0.17.1-gcc-7.3.0'
-    build:
-      context: gcc
-      args:
-        - BAZEL_VERSION=0.17.1
-        - COMPILER_VERSION=7.3.0
-  bazel-0-17-1-gcc-6:
-    image: 'zaucy/bazel:0.17.1-gcc-6'
-    build:
-      context: gcc
-      args:
-        - BAZEL_VERSION=0.17.1
-        - COMPILER_VERSION=6
-  bazel-0-17-1-gcc-6-4:
-    image: 'zaucy/bazel:0.17.1-gcc-6.4'
-    build:
-      context: gcc
-      args:
-        - BAZEL_VERSION=0.17.1
-        - COMPILER_VERSION=6.4
-  bazel-0-17-1-gcc-6-4-0:
-    image: 'zaucy/bazel:0.17.1-gcc-6.4.0'
-    build:
-      context: gcc
-      args:
-        - BAZEL_VERSION=0.17.1
-        - COMPILER_VERSION=6.4.0
-  bazel-0-17-1-gcc-5:
-    image: 'zaucy/bazel:0.17.1-gcc-5'
-    build:
-      context: gcc
-      args:
-        - BAZEL_VERSION=0.17.1
-        - COMPILER_VERSION=5
-  bazel-0-17-1-gcc-5-5:
-    image: 'zaucy/bazel:0.17.1-gcc-5.5'
-    build:
-      context: gcc
-      args:
-        - BAZEL_VERSION=0.17.1
-        - COMPILER_VERSION=5.5
-  bazel-0-17-1-gcc-5-5-0:
-    image: 'zaucy/bazel:0.17.1-gcc-5.5.0'
-    build:
-      context: gcc
-      args:
-        - BAZEL_VERSION=0.17.1
-        - COMPILER_VERSION=5.5.0
-  bazel-0-17-1-gcc-4:
-    image: 'zaucy/bazel:0.17.1-gcc-4'
-    build:
-      context: gcc
-      args:
-        - BAZEL_VERSION=0.17.1
-        - COMPILER_VERSION=4
-  bazel-0-17-1-gcc-4-9:
-    image: 'zaucy/bazel:0.17.1-gcc-4.9'
-    build:
-      context: gcc
-      args:
-        - BAZEL_VERSION=0.17.1
-        - COMPILER_VERSION=4.9
-  bazel-0-17-1-gcc-4-9-4:
-    image: 'zaucy/bazel:0.17.1-gcc-4.9.4'
-    build:
-      context: gcc
-      args:
-        - BAZEL_VERSION=0.17.1
         - COMPILER_VERSION=4.9.4
